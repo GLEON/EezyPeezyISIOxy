@@ -158,6 +158,8 @@ save_model_output <- function(lake_id, working_folder, oxygen_output){
   saveRDS(object = oxygen_output, file = paste0(working_folder, '/', lake_id, '/oxygen_info_meta.rds'))
 
   message('Output saved.')
+
+  return(c(paste0(working_folder, '/', lake_id, '/oxygen_info_meta.rds')))
 }
 
 create_plot <- function(oxygen_output, lake_id, working_folder){
@@ -191,10 +193,10 @@ create_plot <- function(oxygen_output, lake_id, working_folder){
   filename2 <- paste0('results/plots/oxygen/', lake_id,'_oxygen_plot_recent.jpg')
   ggsave(filename =  filename2, width = 7,
          height = 3, units = 'in', bg = "white")
-  
-  
+
+
   c(filename1, filename2)
-  
+
   # lake_id
 
   # message('Plots saved.')

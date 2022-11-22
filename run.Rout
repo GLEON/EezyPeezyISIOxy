@@ -1,0 +1,38 @@
+
+R version 3.5.1 (2018-07-02) -- "Feather Spray"
+Copyright (C) 2018 The R Foundation for Statistical Computing
+Platform: x86_64-pc-linux-gnu (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+Microsoft R Open 3.5.1
+The enhanced R distribution from Microsoft
+Microsoft packages Copyright (C) 2018 Microsoft Corporation
+
+Using the Intel MKL for parallel mathematical computing (using 4 cores).
+
+Default CRAN mirror snapshot taken on 2018-08-01.
+See: https://mran.microsoft.com/.
+
+> #!/usr/bin/env Rscript
+> 
+> # This is a helper script to run the pipeline.
+> # Choose how to execute the pipeline below.
+> 
+> targets::tar_make()
+Error in rbind(info, getNamespaceInfo(env, "S3methods")) : 
+  number of columns of matrices must match (see arg 2)
+Calls: :: ... tryCatch -> tryCatchList -> tryCatchOne -> <Anonymous>
+Execution halted
